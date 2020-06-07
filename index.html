@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Relaxer</title>
+  </head>
+  <body>
+    <h1>Relaxer</h1>
+    <div class="randomMus">
+        <h2>Random music genre for Relaxer:</h2>
+    </div>
+    <input type="text" class="display" placeholder="try me">
+    <button class="genBtn">Generate</button>
+    <div class="youtubesearch">
+        <h3>Find this genre on youtube:</h3>
+        <form action="http://www.youtube.com/results" method="get" target="_blank" >
+           <input name="search_query"  class="youTubeSearchBox" type="text" maxlength="128" />
+           <select name="search_type">
+           <option value="">Videos</option>
+           <option value="search_users">Channels</option>
+           </select>
+           <input type="submit" value="Search" />
+        </form>
+    </div>
+    <div class="container" id="container">
+      <div class="circle"></div>
+
+      <p id="text"></p>
+
+      <div class="pointer-container">
+        <span class="pointer"></span>
+      </div>
+
+      <div class="gradient-circle"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html> 
